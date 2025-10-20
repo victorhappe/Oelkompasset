@@ -1,0 +1,90 @@
+/*************** mobil ***********************/
+
+.grid-1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin: auto;
+}
+
+/************** øltyper *************/
+
+.grid-1-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.grid-1-2 div {
+  background-color: white;
+  padding-bottom: 20px;
+}
+
+/****************. Desktop ********************/
+@media (min-width: 840px) {
+  .grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+    align-content: center;
+  }
+  .grid-1-1 img {
+    aspect-ratio: 1/1;
+    border-radius: 2rem;
+  }
+  .grid_1-1 p {
+    max-width: 65ch;
+  }
+
+  /************** øltyper *************/
+
+  .grid-1-2 {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*********** top10 ***********/
+  .grid-1-3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 3rem;
+  }
+
+  .grid-1-3 img {
+    border-radius: 2rem;
+    aspect-ratio: 1/1;
+  }
+
+  /*********** brygning **********/
+
+  .grid-1-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .grid-1-4 img {
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    aspect-ratio: 1/1;
+  }
+
+  /************* oelbarer ***********/
+
+  .grid-1-5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .grid-1-5 img {
+    border-radius: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    aspect-ratio: 1/1;
+  }
+}
